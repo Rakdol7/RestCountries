@@ -36,22 +36,24 @@
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
-            listBox1 = new ListBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(63, 33);
+            button1.Location = new Point(53, 170);
             button1.Name = "button1";
             button1.Size = new Size(144, 101);
             button1.TabIndex = 0;
-            button1.Text = "ITALY";
+            button1.Text = "RUSSIA";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(250, 33);
+            button2.Location = new Point(240, 170);
             button2.Name = "button2";
             button2.Size = new Size(144, 101);
             button2.TabIndex = 1;
@@ -61,17 +63,17 @@
             // 
             // button3
             // 
-            button3.Location = new Point(440, 33);
+            button3.Location = new Point(420, 170);
             button3.Name = "button3";
             button3.Size = new Size(144, 101);
             button3.TabIndex = 2;
-            button3.Text = "FRANCE";
+            button3.Text = "SPAIN";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button1_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(631, 33);
+            button4.Location = new Point(605, 170);
             button4.Name = "button4";
             button4.Size = new Size(144, 101);
             button4.TabIndex = 3;
@@ -81,17 +83,18 @@
             // 
             // button5
             // 
-            button5.Location = new Point(63, 158);
+            button5.Location = new Point(53, 304);
             button5.Name = "button5";
             button5.Size = new Size(144, 101);
             button5.TabIndex = 4;
-            button5.Text = "AUSTRIA";
+            button5.Tag = "";
+            button5.Text = "AUT";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button1_Click;
             // 
             // button6
             // 
-            button6.Location = new Point(250, 158);
+            button6.Location = new Point(240, 304);
             button6.Name = "button6";
             button6.Size = new Size(144, 101);
             button6.TabIndex = 5;
@@ -101,7 +104,7 @@
             // 
             // button7
             // 
-            button7.Location = new Point(440, 158);
+            button7.Location = new Point(420, 304);
             button7.Name = "button7";
             button7.Size = new Size(144, 101);
             button7.TabIndex = 6;
@@ -111,7 +114,7 @@
             // 
             // button8
             // 
-            button8.Location = new Point(631, 158);
+            button8.Location = new Point(605, 304);
             button8.Name = "button8";
             button8.Size = new Size(144, 101);
             button8.TabIndex = 7;
@@ -119,21 +122,44 @@
             button8.UseVisualStyleBackColor = true;
             button8.Click += button1_Click;
             // 
-            // listBox1
+            // label1
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(331, 276);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(202, 154);
-            listBox1.TabIndex = 8;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(34, 42);
+            label1.Name = "label1";
+            label1.Size = new Size(494, 45);
+            label1.TabIndex = 8;
+            label1.Text = "QUALE STATO CONFINA CON L'";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(513, 42);
+            label2.Name = "label2";
+            label2.Size = new Size(119, 45);
+            label2.TabIndex = 9;
+            label2.Text = "ITALIA";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(619, 42);
+            label3.Name = "label3";
+            label3.Size = new Size(34, 45);
+            label3.TabIndex = 10;
+            label3.Text = "?";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(listBox1);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(button6);
@@ -145,6 +171,7 @@
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -157,6 +184,8 @@
         private Button button6;
         private Button button7;
         private Button button8;
-        private ListBox listBox1;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }

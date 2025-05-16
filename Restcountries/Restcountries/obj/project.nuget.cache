@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5A5ONG79TLE=",
+  "dgSpecHash": "b97lbYhODUU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\masnada.21197\\Desktop\\Restcountries\\Restcountries\\Restcountries.csproj",
+  "projectFilePath": "C:\\Users\\masnada.21197\\Desktop\\RestCountries\\Restcountries\\Restcountries\\Restcountries.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\masnada.21197\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
