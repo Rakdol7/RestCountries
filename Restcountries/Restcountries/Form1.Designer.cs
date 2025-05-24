@@ -47,6 +47,7 @@
             button1.Name = "button1";
             button1.Size = new Size(144, 101);
             button1.TabIndex = 0;
+            button1.Tag = "RUS";
             button1.Text = "RUSSIA";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
@@ -57,7 +58,8 @@
             button2.Name = "button2";
             button2.Size = new Size(144, 101);
             button2.TabIndex = 1;
-            button2.Text = "GERMANY";
+            button2.Tag = "DEU";
+            button2.Text = "GERMANIA";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button1_Click;
             // 
@@ -67,7 +69,8 @@
             button3.Name = "button3";
             button3.Size = new Size(144, 101);
             button3.TabIndex = 2;
-            button3.Text = "SPAIN";
+            button3.Tag = "ESP";
+            button3.Text = "SPAGNA";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button1_Click;
             // 
@@ -77,7 +80,8 @@
             button4.Name = "button4";
             button4.Size = new Size(144, 101);
             button4.TabIndex = 3;
-            button4.Text = "NORWAY";
+            button4.Tag = "NOR";
+            button4.Text = "NORVEGIA";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button1_Click;
             // 
@@ -87,8 +91,8 @@
             button5.Name = "button5";
             button5.Size = new Size(144, 101);
             button5.TabIndex = 4;
-            button5.Tag = "";
-            button5.Text = "AUT";
+            button5.Tag = "AUT";
+            button5.Text = "AUSTRIA";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button1_Click;
             // 
@@ -98,7 +102,8 @@
             button6.Name = "button6";
             button6.Size = new Size(144, 101);
             button6.TabIndex = 5;
-            button6.Text = "BELGIUM";
+            button6.Tag = "BEL";
+            button6.Text = "BELGIO";
             button6.UseVisualStyleBackColor = true;
             button6.Click += button1_Click;
             // 
@@ -108,6 +113,7 @@
             button7.Name = "button7";
             button7.Size = new Size(144, 101);
             button7.TabIndex = 6;
+            button7.Tag = "IDN";
             button7.Text = "INDONESIA";
             button7.UseVisualStyleBackColor = true;
             button7.Click += button1_Click;
@@ -118,7 +124,8 @@
             button8.Name = "button8";
             button8.Size = new Size(144, 101);
             button8.TabIndex = 7;
-            button8.Text = "EGYPT";
+            button8.Tag = "EGY";
+            button8.Text = "EGITTO";
             button8.UseVisualStyleBackColor = true;
             button8.Click += button1_Click;
             // 

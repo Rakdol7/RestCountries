@@ -12,8 +12,15 @@ namespace Restcountries
 
         private async void button1_Click(object sender, EventArgs e)
         {
+            Button clickedButton = sender as Button;
+            string selectedCountryCode = clickedButton.Tag.ToString(); // Tag del paese cliccato (es. "AUT")
+
+            // label2.Text contiene il nome del paese di riferimento (es. "Italia")
+            string countryName = label2.Text.Trim();
+
+
             HttpClient client = new HttpClient();
-            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "https://restcountries.com/v3.1/name/" +/*(sender as Button)*/label2.Text);
+            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"https://restcountries.com/v3.1/name/{countryName}");
             HttpResponseMessage response = await client.SendAsync(request);
             response.EnsureSuccessStatusCode();
             string risultato = await response.Content.ReadAsStringAsync();;
@@ -24,7 +31,7 @@ namespace Restcountries
             {
                 listBox1.Items.Add(confine);
             }*/
-            if (nazione[0].borders.Contains(button1.Text))
+            if (nazione[0].borders != null && nazione[0].borders.Contains(selectedCountryCode))
             {
                 MessageBox.Show("Hai Vinto!");
             }
@@ -32,6 +39,7 @@ namespace Restcountries
             {
                 MessageBox.Show("Risposta Sbagliata, Riprova");
             }
+
         }
     }
 }
